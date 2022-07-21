@@ -1,0 +1,9 @@
+.DS_Store
+UserInterfaceState.xcuserstate
+Breakpoints_v2.xcbkptlist
+*/xcuserdata
+*.framework
+*.framework.dSYM
+*.a
+*.bundle
+*.dylib
