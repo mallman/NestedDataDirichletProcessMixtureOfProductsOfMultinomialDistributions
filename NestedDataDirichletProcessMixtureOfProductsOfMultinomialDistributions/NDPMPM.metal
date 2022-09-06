@@ -1,6 +1,9 @@
 #include <metal_stdlib>
 using namespace metal;
 
+// N.B.: We use an atomic `C` to ensure safely concurrent updates and reads
+// of that array across threads. Without that (or some) concurrency safety,
+// our implementation is incorrect
 kernel void NDPMPM(constant long* SKR,
                    constant int* H,
                    constant int* P,
